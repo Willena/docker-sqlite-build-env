@@ -1,5 +1,14 @@
-FROM alpine:latest
+FROM debian:latest
 
-RUN apk update && apk add bash sed grep && rm -rf /var/cache/apk/*
-
-CMD /bin/bash
+RUN apt-get update \
+    && apt-get -y install \
+      apt-utils \
+      wget \
+      curl \
+      git \
+      unzip \
+      build-essential \
+      libc6-dev \
+      gcc-multilib \
+      g++-multilib \
+   && apt-get clean
