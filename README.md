@@ -1,4 +1,4 @@
-alpine-bash
-===========
+sqlite-build-env
+================
 
-This image is a simple alpine image with bash.
+This is a building environment image for sqlite3.
