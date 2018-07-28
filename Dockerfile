@@ -12,3 +12,5 @@ RUN apt-get update \
       gcc-multilib \
       g++-multilib \
    && apt-get clean
+
+WORKDIR /work
